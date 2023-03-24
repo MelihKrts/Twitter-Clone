@@ -1,0 +1,1601 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="output.css" rel="stylesheet">
+  <title>Home / Twitter</title>
+  <link rel="stylesheet" href="font-family.css">
+  <link rel="shortcut icon" href="../img/twitter.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css" integrity="sha512-cHxvm20nkjOUySu7jdwiUxgGy11vuVPE9YeK89geLMLMMEOcKFyS2i+8wo0FOwyQO/bL8Bvq1KMsqK4bbOsPnA==" crossorigin="anonymous" referrerpolicy="no-referrer"  type='text/css' />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer"  type='text/css' />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/regular.min.css" integrity="sha512-3YMBYASBKTrccbNMWlnn0ZoEOfRjVs9qo/dlNRea196pg78HaO0H/xPPO2n6MIqV6CgTYcWJ1ZB2EgWjeNP6XA==" crossorigin="anonymous" referrerpolicy="no-referrer"  type='text/css' />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+
+
+</head>
+
+<body class="relative">
+
+
+<main class="w-full flex relative ">
+
+<header class="relative w-1/5 lg:flex-1 flex ">
+
+    <div class="w-full overflow-y-auto">
+
+        <div class="fixed flex lg:hidden z-10 my-4 mx-2 flex-col">
+
+            <div class="container  mx-auto h-full">
+
+                <div class="w-full ml-2 flex flex-col items-center justify-center">
+
+                    <div class="py-2 text-4xl">
+                        <i class="fa-brands fa-twitter " class="" style="color: #1da1f2;"></i>
+                    </div>
+
+                    <div class="py-2 text-4xl">
+                        <i class="fa-solid  fa-house text-2xl  flex"></i>
+                    </div>
+
+                    <div class="py-2 text-4xl">
+                        <i class="fa-solid fa-magnifying-glass text-2xl flex"></i>
+                    </div>
+
+                    <div class="py-2 text-4xl">
+                        <i class="fa-sharp fa-solid fa-bell text-2xl  flex"></i>
+                    </div>
+
+                    <div class="py-2 text-4xl">
+                        <i class="fa-solid fa-envelope text-2xl  flex"></i>
+                    </div>
+
+                    <div class="py-2 text-4xl">
+                        <i class="fa-solid fa-user text-2xl  flex"></i>
+                    </div>
+
+                    <div class="py-2 text-4xl">
+                        <i class="fa-solid fa-ellipsis text-2xl flex"></i>
+                    </div>
+
+                    <div class="py-2 mb-6 rounded-full flex items-center justify-center responsive-button text-4xl w-10 h-10">
+
+                        <i class="fa-solid fa-pencil text-2xl text-white  flex"></i>
+                    </div>
+
+                    <div class="py-2 rounded-full flex items-center justify-center responsive-button text-4xl w-10 h-10">
+                        <img src="../img/default_profile_normal.png" class="rounded-full" alt="">
+                    </div>
+
+                    <div class="flex my-4 text-4xl  ">
+                        <i class="bi bi-brightness-high-fill sun-icon moon-night" id="toggleDark"></i>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="fixed hidden z-10 lg:flex my-4 mx-4 h-full flex-col">
+
+            <div class="container mx-auto h-full">
+                
+                <div class="flex flex-row justify-between">
+
+                    <div class="w-10 h-10 my-4 text-4xl">
+                        <i class="fa-brands fa-twitter pl-4" class="" style="color: #1da1f2;"></i>
+                    </div>
+    
+
+    
+                    <div class="flex my-4 text-4xl  ">
+                        <i class="bi bi-brightness-high-fill sun-icon moon-night" id="toggleDark"></i>
+                    </div>
+
+                    <script type="text/javascript">
+
+                        const toggle = document.getElementById('toggleDark');
+                        const body = document.querySelector('body');
+
+                        toggle.addEventListener('click', function(){
+                            this.classList.toggle('bi-moon');
+                            if(this.classList.toggle('bi-brightness-high-fill')){
+                                body.style.background = 'white';
+                                body.style.color = 'black';
+                                body.style.transition = '1s';
+
+                                const elementNight=document.querySelector('.moon-night');
+                                elementNight.style.color="#FDB813";
+
+
+
+                                const elementSpan = document.querySelector('#darkMode-text');
+                                elementSpan.style.color='black';
+
+
+                            }
+                            else{
+                                body.style.background = 'black';
+                                body.style.color = 'white';
+                                body.style.transition = '1s';
+
+                                const element = document.querySelector('.trends-box');
+                                element.style.backgroundColor = 'rgb(247, 249, 249)';
+                                element.style.color='black';
+
+                                const divElement = document.querySelector('#dark-mods-change-color');
+                                divElement.style.color='black';
+
+                                
+
+                                const elementSpan = document.querySelector('#darkMode-text');
+                                elementSpan.style.color='white';
+
+                                const elementNight=document.querySelector('.moon-night');
+                                elementNight.style.color="white";
+
+
+
+
+                            }
+                        });
+
+                    </script>
+
+                </div>
+    
+                <div class="w-full flex flex-col">
+    
+                    <nav class="w-full hidden lg:flex"> 
+    
+                        <div class="w-full flex flex-col">
+    
+                            <div class="w-full flex box-transition flex-row py-4 pl-4 items-center">
+    
+                                <i class="fa-solid  fa-house text-2xl basis-8 flex"></i>
+                                <div class="flex basis-8 justify-center items-center px-4"><span class="font-bold">Home</span></div>
+    
+                            </div>
+    
+                            <div class="w-full flex box-transition flex-row py-4 pl-4 items-center">
+    
+                                <i class="fa-solid fa-hashtag text-2xl basis-8 flex"></i>
+                                <div class="flex basis-8 justify-center items-center px-4"><span>Explore</span></div>
+    
+                            </div>
+    
+                            <div class="w-full flex box-transition flex-row py-4 pl-4 items-center">
+    
+                                <i class="fa-sharp fa-solid fa-bell text-2xl basis-8 flex"></i>
+                                <div class="flex basis-12 justify-center items-center px-4"><span>Notifications</span></div>
+    
+                            </div>
+    
+                            <div class="w-full flex box-transition flex-row py-4 pl-4 items-center">
+    
+                                <i class="fa-solid fa-envelope text-2xl basis-8 flex"></i>
+                                <div class="flex basis-8 justify-center items-center px-4"><span>Messages</span></div>
+    
+                            </div>
+    
+                            <div class="w-full flex box-transition flex-row py-4 pl-4 items-center">
+    
+                                <i class="fa-solid fa-user text-2xl basis-8 flex"></i>
+                                <div class="flex basis-8 justify-center items-center px-4"><span>Profile</span></div>
+    
+                            </div>
+    
+                            <div class="w-full flex box-transition flex-row py-4 pl-4 items-center">
+    
+                                <i class="fa-solid fa-ellipsis text-2xl basis-8 flex"></i>
+                                <div class="flex basis-8 justify-center items-center px-4"><span>More</span></div>
+    
+                            </div>
+    
+                        </div> 
+    
+                    </nav>
+    
+                    <div class="w-full my-4 hidden lg:block">
+    
+                        <div class="flex justify-center button-color h-12 items-center">
+    
+                            <span class="text-white">Tweet</span>
+    
+                        </div>
+    
+                    </div>
+    
+                    <div class="w-full lg:flex my-4 hidden">
+    
+                        <div class="flex">
+                            <div><img src="../img/default_profile_normal.png" class="rounded-full" alt=""></div>
+                        </div>
+    
+                        <div class="flex ml-4 flex-col">
+                            <div><span class="span-color font-bold" id="darkMode-text">userman</span></div>
+                            <div><span>@userman</span></div>
+                        </div>
+    
+                        <div class="flex items-center justify-center ml-8">
+                            <i class="fa-solid fa-ellipsis text-2xl basis-8 flex"></i>
+                        </div>
+    
+                    </div>
+
+                </div>
+    
+            </div>
+    
+        </div>
+
+    </div>
+
+
+
+</header>
+
+<section class="flex-2 relative flex border-l border-r border-solid border-color  ">
+
+<div class="w-full relative ">
+
+    <div class="w-full sticky top-0 z-10 sticky-background">
+
+        <h2 class="font-bold text-2xl py-8 ml-4">Home</h2>
+
+        <div class="w-full flex flex-row my-8 border-solid border-color border-b">
+
+            <div class="w-1/2">
+
+                <div class="flex items-center justify-center">
+
+                    <h2 class="font-bold my-4">For you</h2>
+
+                </div>
+
+            </div>
+
+            <div class="w-1/2">
+
+                <div class="flex items-center justify-center">
+
+                    <h2 class="my-4">Following</h2>
+
+                </div>
+                
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="w-full">
+        
+        <div class="w-full flex flex-col border-solid border-color border-b">
+
+            <div class="flex flex-row">
+
+                <div class="pl-4">
+                    <img src="../img/default_profile_normal.png" class="rounded-full" alt="">
+                </div>
+    
+                <div class="flex justify-center items-center"><span class="spanText pl-4">What's Happening?</span></div>
+
+            </div>
+
+            <div class="flex flex-row justify-between py-4">
+
+                <div class="flex pl-4 py-4">
+
+                    <div class="pl-4">
+                        <i class="fa-solid fa-image text-xl icon-color"></i>
+                    </div>
+    
+    
+                    <div class="pl-4">
+                        <i class="fa-regular fa-face-smile text-xl icon-color"></i>
+                    </div>
+    
+    
+                    <div class="pl-4">
+                        <i class="fa-solid fa-location-dot text-xl icon-color"></i>
+                    </div>
+                </div>
+
+                <div class="pr-4">
+                    <button class=" flex justify-center items-center button-span-color py-2 px-4">
+                    <span class="  text-center text-white">Tweet</span></button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="w-full ">
+
+        <div class="w-full flex flex-col border-solid border-color border-b">
+
+            <div class="flex flex-row justify-between">
+
+                <div class="flex flex-row">
+
+                    <div class="pl-4 pt-4">
+                        <img src="../img/default_profile_normal.png" class="rounded-full" alt="">
+                    </div>
+    
+                    <div class="flex"><span class="font-bold pt-4 pl-4">userman</span></div>
+                    <div class="flex"><span class="spanText pt-4 pl-2">@userman</span></div>
+                    <div class="flex"><span class="spanText pt-4 pl-2">.</span></div>
+                    <div class="flex"><span class="spanText pt-4 pl-2">1m</span></div>
+                </div>
+
+                <div class="flex py-4 pr-4">
+                    <i class="fa-solid fa-ellipsis text-2xl  flex"></i>
+                </div>
+
+            </div>
+
+            <div class="flex flex-row  pl-4">
+                <p class="text-left pl-16 -mt-4 pb-4 pr-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, recusandae assumenda fuga deleniti blanditiis cumque iure odio expedita dolorem autem? Exercitationem vero quibusdam consequatur repudiandae similique! Quibusdam voluptates consequatur architecto.</p>
+            </div>
+
+            <div class="flex flex-row pl-16 justify-between">
+
+                <div class="flex pl-4 pb-4 icon">
+                    <i class="fa-solid fa-message text-xl"></i>
+                </div>
+
+                <div class="flex pl-4 pb-4 icon">
+                    <i class="fa-solid fa-retweet text-xl"></i>
+                </div>
+
+                <div class="flex pl-4 pb-4 icon">
+                    <i class="fa-solid fa-heart text-xl"></i>
+                </div>
+
+                <div class="flex pr-8 pb-4 icon">
+                    <i class="fa-solid fa-chart-simple"></i>
+                </div>
+
+                
+
+                
+
+                
+
+            </div>
+
+
+        </div>
+
+        <div class="w-full flex flex-col border-solid border-color border-b">
+
+            <div class="flex flex-row justify-between">
+
+                <div class="flex flex-row">
+
+                    <div class="pl-4 pt-4">
+                        <img src="../img/default_profile_normal.png" class="rounded-full" alt="">
+                    </div>
+    
+                    <div class="flex"><span class="font-bold pt-4 pl-4">userman</span></div>
+                    <div class="flex"><span class="spanText pt-4 pl-2">@userman</span></div>
+                    <div class="flex"><span class="spanText pt-4 pl-2">.</span></div>
+                    <div class="flex"><span class="spanText pt-4 pl-2">1m</span></div>
+                </div>
+
+                <div class="flex py-4 pr-4">
+                    <i class="fa-solid fa-ellipsis text-2xl  flex"></i>
+                </div>
+
+            </div>
+
+            <div class="flex flex-row  pl-4">
+                <p class="text-left pl-16 -mt-4 pb-4 pr-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, recusandae assumenda fuga deleniti blanditiis cumque iure odio expedita dolorem autem? Exercitationem vero quibusdam consequatur repudiandae similique! Quibusdam voluptates consequatur architecto.</p>
+            </div>
+
+            <div class="flex flex-row pl-16 justify-between">
+
+                <div class="flex pl-4 pb-4 icon">
+                    <i class="fa-solid fa-message text-xl"></i>
+                </div>
+
+                <div class="flex pl-4 pb-4 icon">
+                    <i class="fa-solid fa-retweet text-xl"></i>
+                </div>
+
+                <div class="flex pl-4 pb-4 icon">
+                    <i class="fa-solid fa-heart text-xl"></i>
+                </div>
+
+                <div class="flex pr-8 pb-4 icon">
+                    <i class="fa-solid fa-chart-simple"></i>
+                </div>
+
+                
+
+                
+
+                
+
+            </div>
+
+
+        </div>
+
+        <div class="w-full flex flex-col border-solid border-color border-b">
+
+            <div class="flex flex-row justify-between">
+
+                <div class="flex flex-row">
+
+                    <div class="pl-4 pt-4">
+                        <img src="../img/default_profile_normal.png" class="rounded-full" alt="">
+                    </div>
+    
+                    <div class="flex"><span class="font-bold pt-4 pl-4">userman</span></div>
+                    <div class="flex"><span class="spanText pt-4 pl-2">@userman</span></div>
+                    <div class="flex"><span class="spanText pt-4 pl-2">.</span></div>
+                    <div class="flex"><span class="spanText pt-4 pl-2">1m</span></div>
+                </div>
+
+                <div class="flex py-4 pr-4">
+                    <i class="fa-solid fa-ellipsis text-2xl  flex"></i>
+                </div>
+
+            </div>
+
+            <div class="flex flex-row  pl-4">
+                <p class="text-left pl-16 -mt-4 pb-4 pr-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, recusandae assumenda fuga deleniti blanditiis cumque iure odio expedita dolorem autem? Exercitationem vero quibusdam consequatur repudiandae similique! Quibusdam voluptates consequatur architecto.</p>
+            </div>
+
+            <div class="flex flex-row pl-16 justify-between">
+
+                <div class="flex pl-4 pb-4 icon">
+                    <i class="fa-solid fa-message text-xl"></i>
+                </div>
+
+                <div class="flex pl-4 pb-4 icon">
+                    <i class="fa-solid fa-retweet text-xl"></i>
+                </div>
+
+                <div class="flex pl-4 pb-4 icon">
+                    <i class="fa-solid fa-heart text-xl"></i>
+                </div>
+
+                <div class="flex pr-8 pb-4 icon">
+                    <i class="fa-solid fa-chart-simple"></i>
+                </div>
+
+                
+
+                
+
+                
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="w-full ">
+
+        <div class="w-full flex flex-col border-solid border-color border-b">
+
+            <div class="flex flex-row justify-between">
+
+                <div class="flex flex-row">
+
+                    <div class="pl-4 pt-4">
+                        <img src="../img/default_profile_normal.png" class="rounded-full" alt="">
+                    </div>
+    
+                    <div class="flex"><span class="font-bold pt-4 pl-4">userman</span></div>
+                    <div class="flex"><span class="spanText pt-4 pl-2">@userman</span></div>
+                    <div class="flex"><span class="spanText pt-4 pl-2">.</span></div>
+                    <div class="flex"><span class="spanText pt-4 pl-2">1m</span></div>
+                </div>
+
+                <div class="flex py-4 pr-4">
+                    <i class="fa-solid fa-ellipsis text-2xl  flex"></i>
+                </div>
+
+            </div>
+
+            <div class="flex flex-row  pl-4">
+                <p class="text-left pl-16 -mt-4 pb-4 pr-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, recusandae assumenda fuga deleniti blanditiis cumque iure odio expedita dolorem autem? Exercitationem vero quibusdam consequatur repudiandae similique! Quibusdam voluptates consequatur architecto.</p>
+            </div>
+
+            <div class="flex flex-row pl-16 justify-between">
+
+                <div class="flex pl-4 pb-4 icon">
+                    <i class="fa-solid fa-message text-xl"></i>
+                </div>
+
+                <div class="flex pl-4 pb-4 icon">
+                    <i class="fa-solid fa-retweet text-xl"></i>
+                </div>
+
+                <div class="flex pl-4 pb-4 icon">
+                    <i class="fa-solid fa-heart text-xl"></i>
+                </div>
+
+                <div class="flex pr-8 pb-4 icon">
+                    <i class="fa-solid fa-chart-simple"></i>
+                </div>
+
+                
+
+                
+
+                
+
+            </div>
+
+
+        </div>
+
+        <div class="w-full flex flex-col border-solid border-color border-b">
+
+            <div class="flex flex-row justify-between">
+
+                <div class="flex flex-row">
+
+                    <div class="pl-4 pt-4">
+                        <img src="../img/default_profile_normal.png" class="rounded-full" alt="">
+                    </div>
+    
+                    <div class="flex"><span class="font-bold pt-4 pl-4">userman</span></div>
+                    <div class="flex"><span class="spanText pt-4 pl-2">@userman</span></div>
+                    <div class="flex"><span class="spanText pt-4 pl-2">.</span></div>
+                    <div class="flex"><span class="spanText pt-4 pl-2">1m</span></div>
+                </div>
+
+                <div class="flex py-4 pr-4">
+                    <i class="fa-solid fa-ellipsis text-2xl  flex"></i>
+                </div>
+
+            </div>
+
+            <div class="flex flex-row  pl-4">
+                <p class="text-left pl-16 -mt-4 pb-4 pr-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, recusandae assumenda fuga deleniti blanditiis cumque iure odio expedita dolorem autem? Exercitationem vero quibusdam consequatur repudiandae similique! Quibusdam voluptates consequatur architecto.</p>
+            </div>
+
+            <div class="flex flex-row pl-16 justify-between">
+
+                <div class="flex pl-4 pb-4 icon">
+                    <i class="fa-solid fa-message text-xl"></i>
+                </div>
+
+                <div class="flex pl-4 pb-4 icon">
+                    <i class="fa-solid fa-retweet text-xl"></i>
+                </div>
+
+                <div class="flex pl-4 pb-4 icon">
+                    <i class="fa-solid fa-heart text-xl"></i>
+                </div>
+
+                <div class="flex pr-8 pb-4 icon">
+                    <i class="fa-solid fa-chart-simple"></i>
+                </div>
+
+                
+
+                
+
+                
+
+            </div>
+
+
+        </div>
+
+        <div class="w-full flex flex-col border-solid border-color border-b">
+
+            <div class="flex flex-row justify-between">
+
+                <div class="flex flex-row">
+
+                    <div class="pl-4 pt-4">
+                        <img src="../img/default_profile_normal.png" class="rounded-full" alt="">
+                    </div>
+    
+                    <div class="flex"><span class="font-bold pt-4 pl-4">userman</span></div>
+                    <div class="flex"><span class="spanText pt-4 pl-2">@userman</span></div>
+                    <div class="flex"><span class="spanText pt-4 pl-2">.</span></div>
+                    <div class="flex"><span class="spanText pt-4 pl-2">1m</span></div>
+                </div>
+
+                <div class="flex py-4 pr-4">
+                    <i class="fa-solid fa-ellipsis text-2xl  flex"></i>
+                </div>
+
+            </div>
+
+            <div class="flex flex-row  pl-4">
+                <p class="text-left pl-16 -mt-4 pb-4 pr-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, recusandae assumenda fuga deleniti blanditiis cumque iure odio expedita dolorem autem? Exercitationem vero quibusdam consequatur repudiandae similique! Quibusdam voluptates consequatur architecto.</p>
+            </div>
+
+            <div class="flex flex-row pl-16 justify-between">
+
+                <div class="flex pl-4 pb-4 icon">
+                    <i class="fa-solid fa-message text-xl"></i>
+                </div>
+
+                <div class="flex pl-4 pb-4 icon">
+                    <i class="fa-solid fa-retweet text-xl"></i>
+                </div>
+
+                <div class="flex pl-4 pb-4 icon">
+                    <i class="fa-solid fa-heart text-xl"></i>
+                </div>
+
+                <div class="flex pr-8 pb-4 icon">
+                    <i class="fa-solid fa-chart-simple"></i>
+                </div>
+
+                
+
+                
+
+                
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="w-full ">
+
+        <div class="w-full flex flex-col border-solid border-color border-b">
+
+            <div class="flex flex-row justify-between">
+
+                <div class="flex flex-row">
+
+                    <div class="pl-4 pt-4">
+                        <img src="../img/default_profile_normal.png" class="rounded-full" alt="">
+                    </div>
+    
+                    <div class="flex"><span class="font-bold pt-4 pl-4">userman</span></div>
+                    <div class="flex"><span class="spanText pt-4 pl-2">@userman</span></div>
+                    <div class="flex"><span class="spanText pt-4 pl-2">.</span></div>
+                    <div class="flex"><span class="spanText pt-4 pl-2">1m</span></div>
+                </div>
+
+                <div class="flex py-4 pr-4">
+                    <i class="fa-solid fa-ellipsis text-2xl  flex"></i>
+                </div>
+
+            </div>
+
+            <div class="flex flex-row  pl-4">
+                <p class="text-left pl-16 -mt-4 pb-4 pr-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, recusandae assumenda fuga deleniti blanditiis cumque iure odio expedita dolorem autem? Exercitationem vero quibusdam consequatur repudiandae similique! Quibusdam voluptates consequatur architecto.</p>
+            </div>
+
+            <div class="flex flex-row pl-16 justify-between">
+
+                <div class="flex pl-4 pb-4 icon">
+                    <i class="fa-solid fa-message text-xl"></i>
+                </div>
+
+                <div class="flex pl-4 pb-4 icon">
+                    <i class="fa-solid fa-retweet text-xl"></i>
+                </div>
+
+                <div class="flex pl-4 pb-4 icon">
+                    <i class="fa-solid fa-heart text-xl"></i>
+                </div>
+
+                <div class="flex pr-8 pb-4 icon">
+                    <i class="fa-solid fa-chart-simple"></i>
+                </div>
+
+                
+
+                
+
+                
+
+            </div>
+
+
+        </div>
+
+        <div class="w-full flex flex-col border-solid border-color border-b">
+
+            <div class="flex flex-row justify-between">
+
+                <div class="flex flex-row">
+
+                    <div class="pl-4 pt-4">
+                        <img src="../img/default_profile_normal.png" class="rounded-full" alt="">
+                    </div>
+    
+                    <div class="flex"><span class="font-bold pt-4 pl-4">userman</span></div>
+                    <div class="flex"><span class="spanText pt-4 pl-2">@userman</span></div>
+                    <div class="flex"><span class="spanText pt-4 pl-2">.</span></div>
+                    <div class="flex"><span class="spanText pt-4 pl-2">1m</span></div>
+                </div>
+
+                <div class="flex py-4 pr-4">
+                    <i class="fa-solid fa-ellipsis text-2xl  flex"></i>
+                </div>
+
+            </div>
+
+            <div class="flex flex-row  pl-4">
+                <p class="text-left pl-16 -mt-4 pb-4 pr-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, recusandae assumenda fuga deleniti blanditiis cumque iure odio expedita dolorem autem? Exercitationem vero quibusdam consequatur repudiandae similique! Quibusdam voluptates consequatur architecto.</p>
+            </div>
+
+            <div class="flex flex-row pl-16 justify-between">
+
+                <div class="flex pl-4 pb-4 icon">
+                    <i class="fa-solid fa-message text-xl"></i>
+                </div>
+
+                <div class="flex pl-4 pb-4 icon">
+                    <i class="fa-solid fa-retweet text-xl"></i>
+                </div>
+
+                <div class="flex pl-4 pb-4 icon">
+                    <i class="fa-solid fa-heart text-xl"></i>
+                </div>
+
+                <div class="flex pr-8 pb-4 icon">
+                    <i class="fa-solid fa-chart-simple"></i>
+                </div>
+
+                
+
+                
+
+                
+
+            </div>
+
+
+        </div>
+
+        <div class="w-full flex flex-col border-solid border-color border-b">
+
+            <div class="flex flex-row justify-between">
+
+                <div class="flex flex-row">
+
+                    <div class="pl-4 pt-4">
+                        <img src="../img/default_profile_normal.png" class="rounded-full" alt="">
+                    </div>
+    
+                    <div class="flex"><span class="font-bold pt-4 pl-4">userman</span></div>
+                    <div class="flex"><span class="spanText pt-4 pl-2">@userman</span></div>
+                    <div class="flex"><span class="spanText pt-4 pl-2">.</span></div>
+                    <div class="flex"><span class="spanText pt-4 pl-2">1m</span></div>
+                </div>
+
+                <div class="flex py-4 pr-4">
+                    <i class="fa-solid fa-ellipsis text-2xl  flex"></i>
+                </div>
+
+            </div>
+
+            <div class="flex flex-row  pl-4">
+                <p class="text-left pl-16 -mt-4 pb-4 pr-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, recusandae assumenda fuga deleniti blanditiis cumque iure odio expedita dolorem autem? Exercitationem vero quibusdam consequatur repudiandae similique! Quibusdam voluptates consequatur architecto.</p>
+            </div>
+
+            <div class="flex flex-row pl-16 justify-between">
+
+                <div class="flex pl-4 pb-4 icon">
+                    <i class="fa-solid fa-message text-xl"></i>
+                </div>
+
+                <div class="flex pl-4 pb-4 icon">
+                    <i class="fa-solid fa-retweet text-xl"></i>
+                </div>
+
+                <div class="flex pl-4 pb-4 icon">
+                    <i class="fa-solid fa-heart text-xl"></i>
+                </div>
+
+                <div class="flex pr-8 pb-4 icon">
+                    <i class="fa-solid fa-chart-simple"></i>
+                </div>
+
+                
+
+                
+
+                
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="w-full ">
+
+        <div class="w-full flex flex-col border-solid border-color border-b">
+
+            <div class="flex flex-row justify-between">
+
+                <div class="flex flex-row">
+
+                    <div class="pl-4 pt-4">
+                        <img src="../img/default_profile_normal.png" class="rounded-full" alt="">
+                    </div>
+    
+                    <div class="flex"><span class="font-bold pt-4 pl-4">userman</span></div>
+                    <div class="flex"><span class="spanText pt-4 pl-2">@userman</span></div>
+                    <div class="flex"><span class="spanText pt-4 pl-2">.</span></div>
+                    <div class="flex"><span class="spanText pt-4 pl-2">1m</span></div>
+                </div>
+
+                <div class="flex py-4 pr-4">
+                    <i class="fa-solid fa-ellipsis text-2xl  flex"></i>
+                </div>
+
+            </div>
+
+            <div class="flex flex-row  pl-4">
+                <p class="text-left pl-16 -mt-4 pb-4 pr-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, recusandae assumenda fuga deleniti blanditiis cumque iure odio expedita dolorem autem? Exercitationem vero quibusdam consequatur repudiandae similique! Quibusdam voluptates consequatur architecto.</p>
+            </div>
+
+            <div class="flex flex-row pl-16 justify-between">
+
+                <div class="flex pl-4 pb-4 icon">
+                    <i class="fa-solid fa-message text-xl"></i>
+                </div>
+
+                <div class="flex pl-4 pb-4 icon">
+                    <i class="fa-solid fa-retweet text-xl"></i>
+                </div>
+
+                <div class="flex pl-4 pb-4 icon">
+                    <i class="fa-solid fa-heart text-xl"></i>
+                </div>
+
+                <div class="flex pr-8 pb-4 icon">
+                    <i class="fa-solid fa-chart-simple"></i>
+                </div>
+
+                
+
+                
+
+                
+
+            </div>
+
+
+        </div>
+
+        <div class="w-full flex flex-col border-solid border-color border-b">
+
+            <div class="flex flex-row justify-between">
+
+                <div class="flex flex-row">
+
+                    <div class="pl-4 pt-4">
+                        <img src="../img/default_profile_normal.png" class="rounded-full" alt="">
+                    </div>
+    
+                    <div class="flex"><span class="font-bold pt-4 pl-4">userman</span></div>
+                    <div class="flex"><span class="spanText pt-4 pl-2">@userman</span></div>
+                    <div class="flex"><span class="spanText pt-4 pl-2">.</span></div>
+                    <div class="flex"><span class="spanText pt-4 pl-2">1m</span></div>
+                </div>
+
+                <div class="flex py-4 pr-4">
+                    <i class="fa-solid fa-ellipsis text-2xl  flex"></i>
+                </div>
+
+            </div>
+
+            <div class="flex flex-row  pl-4">
+                <p class="text-left pl-16 -mt-4 pb-4 pr-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, recusandae assumenda fuga deleniti blanditiis cumque iure odio expedita dolorem autem? Exercitationem vero quibusdam consequatur repudiandae similique! Quibusdam voluptates consequatur architecto.</p>
+            </div>
+
+            <div class="flex flex-row pl-16 justify-between">
+
+                <div class="flex pl-4 pb-4 icon">
+                    <i class="fa-solid fa-message text-xl"></i>
+                </div>
+
+                <div class="flex pl-4 pb-4 icon">
+                    <i class="fa-solid fa-retweet text-xl"></i>
+                </div>
+
+                <div class="flex pl-4 pb-4 icon">
+                    <i class="fa-solid fa-heart text-xl"></i>
+                </div>
+
+                <div class="flex pr-8 pb-4 icon">
+                    <i class="fa-solid fa-chart-simple"></i>
+                </div>
+
+                
+
+                
+
+                
+
+            </div>
+
+
+        </div>
+
+        <div class="w-full flex flex-col border-solid border-color border-b">
+
+            <div class="flex flex-row justify-between">
+
+                <div class="flex flex-row">
+
+                    <div class="pl-4 pt-4">
+                        <img src="../img/default_profile_normal.png" class="rounded-full" alt="">
+                    </div>
+    
+                    <div class="flex"><span class="font-bold pt-4 pl-4">userman</span></div>
+                    <div class="flex"><span class="spanText pt-4 pl-2">@userman</span></div>
+                    <div class="flex"><span class="spanText pt-4 pl-2">.</span></div>
+                    <div class="flex"><span class="spanText pt-4 pl-2">1m</span></div>
+                </div>
+
+                <div class="flex py-4 pr-4">
+                    <i class="fa-solid fa-ellipsis text-2xl  flex"></i>
+                </div>
+
+            </div>
+
+            <div class="flex flex-row  pl-4">
+                <p class="text-left pl-16 -mt-4 pb-4 pr-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, recusandae assumenda fuga deleniti blanditiis cumque iure odio expedita dolorem autem? Exercitationem vero quibusdam consequatur repudiandae similique! Quibusdam voluptates consequatur architecto.</p>
+            </div>
+
+            <div class="flex flex-row pl-16 justify-between">
+
+                <div class="flex pl-4 pb-4 icon">
+                    <i class="fa-solid fa-message text-xl"></i>
+                </div>
+
+                <div class="flex pl-4 pb-4 icon">
+                    <i class="fa-solid fa-retweet text-xl"></i>
+                </div>
+
+                <div class="flex pl-4 pb-4 icon">
+                    <i class="fa-solid fa-heart text-xl"></i>
+                </div>
+
+                <div class="flex pr-8 pb-4 icon">
+                    <i class="fa-solid fa-chart-simple"></i>
+                </div>
+
+                
+
+                
+
+                
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="w-full ">
+
+        <div class="w-full flex flex-col border-solid border-color border-b">
+
+            <div class="flex flex-row justify-between">
+
+                <div class="flex flex-row">
+
+                    <div class="pl-4 pt-4">
+                        <img src="../img/default_profile_normal.png" class="rounded-full" alt="">
+                    </div>
+    
+                    <div class="flex"><span class="font-bold pt-4 pl-4">userman</span></div>
+                    <div class="flex"><span class="spanText pt-4 pl-2">@userman</span></div>
+                    <div class="flex"><span class="spanText pt-4 pl-2">.</span></div>
+                    <div class="flex"><span class="spanText pt-4 pl-2">1m</span></div>
+                </div>
+
+                <div class="flex py-4 pr-4">
+                    <i class="fa-solid fa-ellipsis text-2xl  flex"></i>
+                </div>
+
+            </div>
+
+            <div class="flex flex-row  pl-4">
+                <p class="text-left pl-16 -mt-4 pb-4 pr-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, recusandae assumenda fuga deleniti blanditiis cumque iure odio expedita dolorem autem? Exercitationem vero quibusdam consequatur repudiandae similique! Quibusdam voluptates consequatur architecto.</p>
+            </div>
+
+            <div class="flex flex-row pl-16 justify-between">
+
+                <div class="flex pl-4 pb-4 icon">
+                    <i class="fa-solid fa-message text-xl"></i>
+                </div>
+
+                <div class="flex pl-4 pb-4 icon">
+                    <i class="fa-solid fa-retweet text-xl"></i>
+                </div>
+
+                <div class="flex pl-4 pb-4 icon">
+                    <i class="fa-solid fa-heart text-xl"></i>
+                </div>
+
+                <div class="flex pr-8 pb-4 icon">
+                    <i class="fa-solid fa-chart-simple"></i>
+                </div>
+
+                
+
+                
+
+                
+
+            </div>
+
+
+        </div>
+
+        <div class="w-full flex flex-col border-solid border-color border-b">
+
+            <div class="flex flex-row justify-between">
+
+                <div class="flex flex-row">
+
+                    <div class="pl-4 pt-4">
+                        <img src="../img/default_profile_normal.png" class="rounded-full" alt="">
+                    </div>
+    
+                    <div class="flex"><span class="font-bold pt-4 pl-4">userman</span></div>
+                    <div class="flex"><span class="spanText pt-4 pl-2">@userman</span></div>
+                    <div class="flex"><span class="spanText pt-4 pl-2">.</span></div>
+                    <div class="flex"><span class="spanText pt-4 pl-2">1m</span></div>
+                </div>
+
+                <div class="flex py-4 pr-4">
+                    <i class="fa-solid fa-ellipsis text-2xl  flex"></i>
+                </div>
+
+            </div>
+
+            <div class="flex flex-row  pl-4">
+                <p class="text-left pl-16 -mt-4 pb-4 pr-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, recusandae assumenda fuga deleniti blanditiis cumque iure odio expedita dolorem autem? Exercitationem vero quibusdam consequatur repudiandae similique! Quibusdam voluptates consequatur architecto.</p>
+            </div>
+
+            <div class="flex flex-row pl-16 justify-between">
+
+                <div class="flex pl-4 pb-4 icon">
+                    <i class="fa-solid fa-message text-xl"></i>
+                </div>
+
+                <div class="flex pl-4 pb-4 icon">
+                    <i class="fa-solid fa-retweet text-xl"></i>
+                </div>
+
+                <div class="flex pl-4 pb-4 icon">
+                    <i class="fa-solid fa-heart text-xl"></i>
+                </div>
+
+                <div class="flex pr-8 pb-4 icon">
+                    <i class="fa-solid fa-chart-simple"></i>
+                </div>
+
+                
+
+                
+
+                
+
+            </div>
+
+
+        </div>
+
+        <div class="w-full flex flex-col border-solid border-color border-b">
+
+            <div class="flex flex-row justify-between">
+
+                <div class="flex flex-row">
+
+                    <div class="pl-4 pt-4">
+                        <img src="../img/default_profile_normal.png" class="rounded-full" alt="">
+                    </div>
+    
+                    <div class="flex"><span class="font-bold pt-4 pl-4">userman</span></div>
+                    <div class="flex"><span class="spanText pt-4 pl-2">@userman</span></div>
+                    <div class="flex"><span class="spanText pt-4 pl-2">.</span></div>
+                    <div class="flex"><span class="spanText pt-4 pl-2">1m</span></div>
+                </div>
+
+                <div class="flex py-4 pr-4">
+                    <i class="fa-solid fa-ellipsis text-2xl  flex"></i>
+                </div>
+
+            </div>
+
+            <div class="flex flex-row  pl-4">
+                <p class="text-left pl-16 -mt-4 pb-4 pr-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, recusandae assumenda fuga deleniti blanditiis cumque iure odio expedita dolorem autem? Exercitationem vero quibusdam consequatur repudiandae similique! Quibusdam voluptates consequatur architecto.</p>
+            </div>
+
+            <div class="flex flex-row pl-16 justify-between">
+
+                <div class="flex pl-4 pb-4 icon">
+                    <i class="fa-solid fa-message text-xl"></i>
+                </div>
+
+                <div class="flex pl-4 pb-4 icon">
+                    <i class="fa-solid fa-retweet text-xl"></i>
+                </div>
+
+                <div class="flex pl-4 pb-4 icon">
+                    <i class="fa-solid fa-heart text-xl"></i>
+                </div>
+
+                <div class="flex pr-8 pb-4 icon">
+                    <i class="fa-solid fa-chart-simple"></i>
+                </div>
+
+                
+
+                
+
+                
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="w-full ">
+
+        <div class="w-full flex flex-col border-solid border-color border-b">
+
+            <div class="flex flex-row justify-between">
+
+                <div class="flex flex-row">
+
+                    <div class="pl-4 pt-4">
+                        <img src="../img/default_profile_normal.png" class="rounded-full" alt="">
+                    </div>
+    
+                    <div class="flex"><span class="font-bold pt-4 pl-4">userman</span></div>
+                    <div class="flex"><span class="spanText pt-4 pl-2">@userman</span></div>
+                    <div class="flex"><span class="spanText pt-4 pl-2">.</span></div>
+                    <div class="flex"><span class="spanText pt-4 pl-2">1m</span></div>
+                </div>
+
+                <div class="flex py-4 pr-4">
+                    <i class="fa-solid fa-ellipsis text-2xl  flex"></i>
+                </div>
+
+            </div>
+
+            <div class="flex flex-row  pl-4">
+                <p class="text-left pl-16 -mt-4 pb-4 pr-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, recusandae assumenda fuga deleniti blanditiis cumque iure odio expedita dolorem autem? Exercitationem vero quibusdam consequatur repudiandae similique! Quibusdam voluptates consequatur architecto.</p>
+            </div>
+
+            <div class="flex flex-row pl-16 justify-between">
+
+                <div class="flex pl-4 pb-4 icon">
+                    <i class="fa-solid fa-message text-xl"></i>
+                </div>
+
+                <div class="flex pl-4 pb-4 icon">
+                    <i class="fa-solid fa-retweet text-xl"></i>
+                </div>
+
+                <div class="flex pl-4 pb-4 icon">
+                    <i class="fa-solid fa-heart text-xl"></i>
+                </div>
+
+                <div class="flex pr-8 pb-4 icon">
+                    <i class="fa-solid fa-chart-simple"></i>
+                </div>
+
+                
+
+                
+
+                
+
+            </div>
+
+
+        </div>
+
+        <div class="w-full flex flex-col border-solid border-color border-b">
+
+            <div class="flex flex-row justify-between">
+
+                <div class="flex flex-row">
+
+                    <div class="pl-4 pt-4">
+                        <img src="../img/default_profile_normal.png" class="rounded-full" alt="">
+                    </div>
+    
+                    <div class="flex"><span class="font-bold pt-4 pl-4">userman</span></div>
+                    <div class="flex"><span class="spanText pt-4 pl-2">@userman</span></div>
+                    <div class="flex"><span class="spanText pt-4 pl-2">.</span></div>
+                    <div class="flex"><span class="spanText pt-4 pl-2">1m</span></div>
+                </div>
+
+                <div class="flex py-4 pr-4">
+                    <i class="fa-solid fa-ellipsis text-2xl  flex"></i>
+                </div>
+
+            </div>
+
+            <div class="flex flex-row  pl-4">
+                <p class="text-left pl-16 -mt-4 pb-4 pr-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, recusandae assumenda fuga deleniti blanditiis cumque iure odio expedita dolorem autem? Exercitationem vero quibusdam consequatur repudiandae similique! Quibusdam voluptates consequatur architecto.</p>
+            </div>
+
+            <div class="flex flex-row pl-16 justify-between">
+
+                <div class="flex pl-4 pb-4 icon">
+                    <i class="fa-solid fa-message text-xl"></i>
+                </div>
+
+                <div class="flex pl-4 pb-4 icon">
+                    <i class="fa-solid fa-retweet text-xl"></i>
+                </div>
+
+                <div class="flex pl-4 pb-4 icon">
+                    <i class="fa-solid fa-heart text-xl"></i>
+                </div>
+
+                <div class="flex pr-8 pb-4 icon">
+                    <i class="fa-solid fa-chart-simple"></i>
+                </div>
+
+                
+
+                
+
+                
+
+            </div>
+
+
+        </div>
+
+        <div class="w-full flex flex-col border-solid border-color border-b">
+
+            <div class="flex flex-row justify-between">
+
+                <div class="flex flex-row">
+
+                    <div class="pl-4 pt-4">
+                        <img src="../img/default_profile_normal.png" class="rounded-full" alt="">
+                    </div>
+    
+                    <div class="flex"><span class="font-bold pt-4 pl-4">userman</span></div>
+                    <div class="flex"><span class="spanText pt-4 pl-2">@userman</span></div>
+                    <div class="flex"><span class="spanText pt-4 pl-2">.</span></div>
+                    <div class="flex"><span class="spanText pt-4 pl-2">1m</span></div>
+                </div>
+
+                <div class="flex py-4 pr-4">
+                    <i class="fa-solid fa-ellipsis text-2xl  flex"></i>
+                </div>
+
+            </div>
+
+            <div class="flex flex-row  pl-4">
+                <p class="text-left pl-16 -mt-4 pb-4 pr-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, recusandae assumenda fuga deleniti blanditiis cumque iure odio expedita dolorem autem? Exercitationem vero quibusdam consequatur repudiandae similique! Quibusdam voluptates consequatur architecto.</p>
+            </div>
+
+            <div class="flex flex-row pl-16 justify-between">
+
+                <div class="flex pl-4 pb-4 icon">
+                    <i class="fa-solid fa-message text-xl"></i>
+                </div>
+
+                <div class="flex pl-4 pb-4 icon">
+                    <i class="fa-solid fa-retweet text-xl"></i>
+                </div>
+
+                <div class="flex pl-4 pb-4 icon">
+                    <i class="fa-solid fa-heart text-xl"></i>
+                </div>
+
+                <div class="flex pr-8 pb-4 icon">
+                    <i class="fa-solid fa-chart-simple"></i>
+                </div>
+
+                
+
+                
+
+                
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+<section class=" hidden lg:flex flex-1 flex-col relative">
+
+<div class="relative mb-20 w-full">
+
+    <div class="flex flex-row icon ml-8 mr-8 my-4 background-color fixed top-0 w-1/5 rounded-full z-10">
+        <div class="py-4 pl-4"><i class="fa-solid fa-magnifying-glass"></i></div>
+        <div class="py-4 pl-4"><span class="spanText">Search Twitter</span></div>
+    </div>
+
+</div>
+
+
+<div class="flex flex-col mb-4 sticky ">
+
+        <div class="py-2 pl-4 trends-box rounded-md w-80 mx-auto">
+
+            <h2 class="font-bold text-xl">Trends for you</h2>
+
+            <div class="w-full py-4">
+
+                <div class="flex justify-between">
+                    <span class="text-sm spanText">Trending in Turkey</span>
+                    <i class="fa-solid fa-ellipsis text-xl pr-4  flex"></i>
+                </div>
+
+                <div class="w-full pb-4">
+                    <div class="flex flex-col">
+                        <span class="font-bold">#UserMan</span>
+                        <span class="text-sm spanText">2,000 Tweets </span>
+                    </div>
+                </div>
+
+                <div class="flex justify-between">
+                    <span class="text-sm spanText">Trending in Turkey</span>
+                    <i class="fa-solid fa-ellipsis text-xl pr-4  flex"></i>
+                </div>
+
+                <div class="w-full pb-4">
+                    <div class="flex flex-col">
+                        <span class="font-bold">#UserMan</span>
+                        <span class="text-sm spanText">2,000 Tweets </span>
+                    </div>
+                </div>
+
+                <div class="flex justify-between">
+                    <span class="text-sm spanText">Trending in Turkey</span>
+                    <i class="fa-solid fa-ellipsis text-xl pr-4  flex"></i>
+                </div>
+
+                <div class="w-full pb-4">
+                    <div class="flex flex-col">
+                        <span class="font-bold">#UserMan</span>
+                        <span class="text-sm spanText">2,000 Tweets </span>
+                    </div>
+                </div>
+
+                <div class="flex justify-between">
+                    <span class="text-sm spanText">Trending in Turkey</span>
+                    <i class="fa-solid fa-ellipsis text-xl pr-4  flex"></i>
+                </div>
+
+                <div class="w-full pb-4">
+                    <div class="flex flex-col">
+                        <span class="font-bold">#UserMan</span>
+                        <span class="text-sm spanText">2,000 Tweets </span>
+                    </div>
+                </div>
+
+                <div class="flex justify-between">
+                    <span class="text-sm spanText">Trending in Turkey</span>
+                    <i class="fa-solid fa-ellipsis text-xl pr-4  flex"></i>
+                </div>
+
+                <div class="w-full pb-4">
+                    <div class="flex flex-col">
+                        <span class="font-bold">#UserMan</span>
+                        <span class="text-sm spanText">2,000 Tweets </span>
+                    </div>
+                </div>
+
+                <div class="flex justify-between">
+                    <span class="text-sm spanText">Trending in Turkey</span>
+                    <i class="fa-solid fa-ellipsis text-xl pr-4  flex"></i>
+                </div>
+
+                <div class="w-full pb-4">
+                    <div class="flex flex-col">
+                        <span class="font-bold">#UserMan</span>
+                        <span class="text-sm spanText">2,000 Tweets </span>
+                    </div>
+                </div>
+
+                <div class="flex justify-between">
+                    <span class="text-sm spanText">Trending in Turkey</span>
+                    <i class="fa-solid fa-ellipsis text-xl pr-4  flex"></i>
+                </div>
+
+                <div class="w-full pb-4">
+                    <div class="flex flex-col">
+                        <span class="font-bold">#UserMan</span>
+                        <span class="text-sm spanText">2,000 Tweets </span>
+                    </div>
+                </div>
+
+                <div class="flex justify-between">
+                    <span class="text-sm spanText">Trending in Turkey</span>
+                    <i class="fa-solid fa-ellipsis text-xl pr-4  flex"></i>
+                </div>
+
+                <div class="w-full pb-4">
+                    <div class="flex flex-col">
+                        <span class="font-bold">#UserMan</span>
+                        <span class="text-sm spanText">2,000 Tweets </span>
+                    </div>
+                </div>
+
+                <div class="flex justify-between">
+                    <span class="text-sm spanText">Trending in Turkey</span>
+                    <i class="fa-solid fa-ellipsis text-xl pr-4  flex"></i>
+                </div>
+
+                <div class="w-full pb-4">
+                    <div class="flex flex-col">
+                        <span class="font-bold">#UserMan</span>
+                        <span class="text-sm spanText">2,000 Tweets </span>
+                    </div>
+                </div>
+
+                <div class="flex justify-between">
+                    <span class="text-sm spanText">Trending in Turkey</span>
+                    <i class="fa-solid fa-ellipsis text-xl pr-4  flex"></i>
+                </div>
+
+                <div class="w-full pb-4">
+                    <div class="flex flex-col">
+                        <span class="font-bold">#UserMan</span>
+                        <span class="text-sm spanText">2,000 Tweets </span>
+                    </div>
+                </div>
+
+
+                <div class="w-full ">
+                    <div class="flex flex-col">
+                        <span class="text-sm icon-color">Show more </span>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+</div>
+
+
+<div class="flex flex-col mb-4 relative">
+
+    <div class="py-2 pl-4 trends-box rounded-md w-80 mx-auto" id="dark-mods-change-color">
+
+        <h2 class="font-bold text-xl">Who to follow  </h2>
+
+        <div class="w-full flex flex-col py-4">
+
+            <div class="flex flex-row mb-4 ">
+
+                <div class="py-2">
+                    <img src="../img/default_profile_normal.png" class="rounded-full" alt="">
+                </div>
+
+                <div class="flex pl-4 w-full items-center justify-between">
+
+                    <div class="flex flex-col">
+
+                        <span class="font-bold">userman</span>
+                        <span class="spanText">@userman</span>
+
+                    </div>
+
+
+                    <div class="flex justify-end">
+                        <div class="rounded-full  flex mr-8 follow-buttons  justify-center items-center"><span class="text-white text-center font-medium">Follow</span></div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="flex flex-row mb-4 ">
+
+                <div class="py-2">
+                    <img src="../img/default_profile_normal.png" class="rounded-full" alt="">
+                </div>
+
+                <div class="flex pl-4 w-full items-center justify-between">
+
+                    <div class="flex flex-col">
+
+                        <span class="font-bold">userman</span>
+                        <span class="spanText">@userman</span>
+
+                    </div>
+
+
+                    <div class="flex justify-end">
+                        <div class="rounded-full  flex mr-8 follow-buttons  justify-center items-center"><span class="text-white text-center font-medium">Follow</span></div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="flex flex-row mb-4 ">
+
+                <div class="py-2">
+                    <img src="../img/default_profile_normal.png" class="rounded-full" alt="">
+                </div>
+
+                <div class="flex pl-4 w-full items-center justify-between">
+
+                    <div class="flex flex-col">
+
+                        <span class="font-bold">userman</span>
+                        <span class="spanText">@userman</span>
+
+                    </div>
+
+
+                    <div class="flex justify-end">
+                        <div class="rounded-full  flex mr-8 follow-buttons  justify-center items-center"><span class="text-white text-center font-medium">Follow</span></div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="w-full ">
+                <div class="flex flex-col">
+                    <span class="text-sm icon-color">Show more </span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+</section>
+
+</main>
+
+
+</body>
+</html>
