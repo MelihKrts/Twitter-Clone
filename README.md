@@ -5,4 +5,7 @@ Tailwind using clone Twitter
 Tailwind.CSS using design Clone Twitter
 <br>
 
+Live view 👇
+
+https://twiitter-clone-website.netlify.app/
 
